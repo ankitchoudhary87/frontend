@@ -1,0 +1,300 @@
+.outsider {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgba(245, 245, 245, 1);
+  font-family: Arial, sans-serif;
+}
+
+.loginbutton{
+  width: auto;
+    display: block;
+    margin-top: -3px;
+    background: rgba(237, 28, 36, 1);
+    border-radius: 3px;
+    border: 0 none;
+    padding: 17px 55px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.spacepart{
+  margin-top: -12px;
+}
+.spaceparttasklist{
+  margin-top: -18px;
+}
+
+.bgnav{
+  background-color: #fff;
+}
+
+.scroll {
+  margin:4px, 4px;
+  padding:4px;
+  background-color: green;
+  width: 500px;
+  height: 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+}
+
+.newinputval{
+  background: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  width: 100%;
+  font-weight: 500;
+  margin: 0.8rem 0;
+  padding: 0.8rem 0.75rem;
+}
+
+.logoutbutton{
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+    background: url(http://att.synapseindia.com/images/turn-off.png) no-repeat center right;
+}
+
+.user_img{
+  width: 70px;
+    height: 70px;
+    background: #ffffff url(http://att.synapseindia.com/images/padlock.png) no-repeat center;
+    margin: -76px auto 0;
+    border: 4px solid rgba(245, 245, 245, 1);
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+}
+
+.fixscroll{
+  position:absolute; 
+  top:200px; 
+  bottom:200px; 
+  left:0px; 
+  right:0px; 
+  overflow:auto;
+}
+
+/* Register Page Style Starts Here */
+.solicitation {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dddfe2;
+  /*box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);*/
+  box-shadow: 0 0 15px 5px grey;
+  border-radius: 8px;
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.chkbox-area {
+  width: 82%;
+  overflow: auto;
+  height: 110px;
+  border: 1px solid #becedc;
+  background: #fff;
+  padding: 5px;
+}
+
+.prfm_state {
+  max-width: 83%;
+  max-height: 77px;
+  border: 1px solid #bccddc;
+  padding: 5px;
+  min-width: 83%;
+  min-height: 108px;
+}
+
+.register {
+  width: 750px;
+  background: #fff;
+  border: 1px solid #dddfe2;
+  /*box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);*/
+  box-shadow: 0 0 15px 5px grey;
+  border-radius: 8px;
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.register > input {
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 45%;
+  font-size: 1rem;
+}
+
+.register > select {
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+}
+
+.register > .button {
+  background: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+/* Register Page Style Ends Here */
+/* Dashboard Page Style Starts Here */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  width: 60%;
+  height: 62%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px grey;
+  background: white;
+  position: relative
+}
+
+.dashboard > .button {
+  background: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+/* Dashboard Page Style Ends Here */
+
+/* Login Page Style Starts Here */
+.login {
+  width: 100%;
+    display: block;
+    max-width: 453px;
+    min-height: auto;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 1);
+    padding: 27px 25px 27px 28px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgb(132 132 132 / 16%);
+
+}
+
+
+/* Login Page Style Ends Here */
+
+.userlist {
+  background: #fff;
+  border: 1px solid #dddfe2;
+  /*box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);*/
+  box-shadow: 0 0 15px 5px grey;
+  border-radius: 8px;
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.maindivmargin {
+  margin-top: 6%;
+  margin-bottom: 10%;
+}
+.centerform{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+
+.mywidth{
+  width: 90%;
+  margin-top: -9px;
+}
+
+.myinputclass{
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 90%;
+  font-size: 1rem;
+}
+.mybutton{
+  background: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.clear { clear: both; }
+
+.image-area {
+  position: relative;
+    width: 25%;
+    float: left;
+    border: solid 1px gray;
+    height: 105px;
+    margin: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-area img{
+  max-width: 100%;
+  height: auto;
+}
+.remove-image {
+display: none;
+position: absolute;
+top: -8px;
+right: -10px;
+border-radius: 10em;
+padding: 2px 6px 3px;
+text-decoration: none;
+font: 700 21px/20px sans-serif;
+background: #555;
+border: 3px solid #fff;
+color: #FFF;
+box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.remove-image:hover {
+ background: #E54E4E;
+  padding: 3px 7px 5px;
+  top: -11px;
+right: -11px;
+}
+.remove-image:active {
+ background: #E54E4E;
+  top: -10px;
+right: -11px;
+}
