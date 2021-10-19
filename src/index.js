@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
 import { subscribeUser } from './subscription';
+//const data = CookieHooks();
 ReactDOM.render(
     <Router>
       <App />

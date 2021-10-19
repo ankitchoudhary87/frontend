@@ -1,5 +1,7 @@
+//import useCookieHooks from './components/CookieHooks';
 const convertedVapidKey = urlBase64ToUint8Array(process.env.REACT_APP_PUBLIC_VAPID_KEY)
 const usersUrl = 'http://localhost:9001/user';
+
 function urlBase64ToUint8Array(base64String) {
   const padding = "=".repeat((4 - base64String.length % 4) % 4)
   // eslint-disable-next-line
@@ -14,7 +16,7 @@ function urlBase64ToUint8Array(base64String) {
   return outputArray
 }
 
-function sendSubscription(subscription) {
+function sendSubscription(subscription) { 
   return fetch(`${usersUrl}/notifications`, {
     method: 'POST',
     body: JSON.stringify({subdata: subscription, cokkID: 2012}),
@@ -25,6 +27,9 @@ function sendSubscription(subscription) {
 }
 
 export function subscribeUser() {
+  /*alert("AAAAA");
+  const data = useCookieHooks();
+  alert(data);*/
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(function(registration) {
       if (!registration.pushManager) {

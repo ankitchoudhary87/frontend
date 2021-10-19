@@ -14,7 +14,7 @@ const Tasklist = (props) => {
                                     )
                                 } else {
                                     return (
-                                        <td style={{ padding: '10px', textAlign: 'left' }}>N/A</td>
+                                        <td style={{ padding: '10px', textAlign: 'left' }}></td>
                                     )
                                 }
                             })()}
@@ -25,7 +25,7 @@ const Tasklist = (props) => {
                                     )
                                 } else {
                                     return (
-                                        <td style={{ padding: '10px', textAlign: 'left' }}>N/A</td>
+                                        <td style={{ padding: '10px', textAlign: 'left' }}></td>
                                     )
                                 }
                             })()}
@@ -36,7 +36,7 @@ const Tasklist = (props) => {
                                     )
                                 } else {
                                     return (
-                                        <td style={{ padding: '10px', textAlign: 'left' }}>N/A</td>
+                                        <td style={{ padding: '10px', textAlign: 'left' }}></td>
                                     )
                                 }
                             })()}

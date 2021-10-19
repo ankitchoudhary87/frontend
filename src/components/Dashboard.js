@@ -9,9 +9,9 @@ const Dashboard = (props) => {
     const storedData = JSON.parse(localStorage.getItem("MyUser"));
     if (storedData) {
         loggedInUserId = storedData.user_id;
-        if(!cookies.userid){
+        //if(!cookies.userid){
             setCookie('userid', loggedInUserId, { path: '/' });
-        }
+        //}
     }
     const [validator, showValidationMessage] = useValidator()
     const [loading, setLoading] = useState(false);
@@ -20,7 +20,6 @@ const Dashboard = (props) => {
         taskchallenge: "",
         user_id: ""
     })
-    
     // set the props as a default user_id in tasklist state
     useEffect(() => {
         if (props.loggedinuser.user_id) {
