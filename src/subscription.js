@@ -1,6 +1,6 @@
 //import useCookieHooks from './components/CookieHooks';
 const convertedVapidKey = urlBase64ToUint8Array(process.env.REACT_APP_PUBLIC_VAPID_KEY)
-const usersUrl = 'http://localhost:9001/user';
+const usersUrl = 'https://whosin-backend.herokuapp.com/user';
 
 function urlBase64ToUint8Array(base64String) {
   const padding = "=".repeat((4 - base64String.length % 4) % 4)

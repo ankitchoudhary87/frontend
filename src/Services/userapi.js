@@ -1,5 +1,5 @@
 import axios from 'axios';
-const usersUrl = 'http://localhost:9001/user';
+const usersUrl = 'https://whosin-backend.herokuapp.com/user';
 
 export const adminLogin = async (user) => {
     return await axios.post(`${usersUrl}/login/`, user)
