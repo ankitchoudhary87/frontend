@@ -5,7 +5,7 @@ function Topnav(props) {
   return (
     <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: '#fff', boxShadow:'0px 1px 4px rgb(131 131 131 / 16%)' }} fixed="top">
       <Container>
-        <img src="http://att.synapseindia.com/images/logo.png" alt="Logo" />
+        <img src="https://att.synapseindia.com/images/logo.png" alt="Logo" />
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
