@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react'
 import { Button, Spinner } from 'react-bootstrap'
 import useValidator from './useValidator'
 import { addTasklist } from '../Services/userapi'
-import { useCookies } from 'react-cookie';
+//import { useCookies } from 'react-cookie';
 const Dashboard = (props) => {
-    const [cookies, setCookie] = useCookies([]);
+    //const [cookies, setCookie] = useCookies([]);
     let loggedInUserId = "";
     const storedData = JSON.parse(localStorage.getItem("MyUser"));
     if (storedData) {
         loggedInUserId = storedData.user_id;
         //if(!cookies.userid){
-            setCookie('userid', loggedInUserId, { path: '/' });
+        //    setCookie('userid', loggedInUserId, { path: '/' });
         //}
     }
     const [validator, showValidationMessage] = useValidator()
