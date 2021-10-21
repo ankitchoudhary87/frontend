@@ -32,10 +32,10 @@ export function register(config) {
     }
 
     window.addEventListener('load', () => {
-      alert("AAAA")
+      //alert("AAAA")
       const swFileName = process.env.NODE_ENV === 'production11' ? 'service-worker.js' : 'custom-sw.js'
       const swUrl = `${process.env.PUBLIC_URL}/${swFileName}`;
-      alert(swUrl)
+      //alert(swUrl)
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
         checkValidServiceWorker(swUrl, config);
