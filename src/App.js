@@ -13,10 +13,12 @@ import * as serviceWorker from './serviceWorker';
 import { subscribeUser } from './subscription';
 function App() {
   const [cookies, setCookie] = useCookies();
-  alert(cookies.userid);
+  //alert(cookies.userid);
   var mycookID = cookies.userid;
-  serviceWorker.register();
-  subscribeUser(mycookID)
+  useEffect(() => {
+    serviceWorker.register();
+    subscribeUser(mycookID)
+  }, [])
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
   useEffect(() => {
