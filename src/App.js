@@ -15,14 +15,12 @@ function App() {
   const [cookies, setCookie] = useCookies();
   //alert(cookies.userid);
   var mycookID = cookies.userid;
-  useEffect(() => {
-    serviceWorker.register();
-    subscribeUser(mycookID)
-  }, [])
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
   useEffect(() => {
     setLogUser(JSON.parse(localStorage.getItem("MyUser")));
+    serviceWorker.register();
+    subscribeUser(mycookID)
   }, [])
   const updateUserinlocalStorage = (user) => {
     localStorage.setItem("MyUser", JSON.stringify(user));
