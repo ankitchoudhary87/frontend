@@ -8,7 +8,6 @@ import * as serviceWorker from './serviceWorker';
 import { subscribeUser } from './subscription';
 import { CookiesProvider } from "react-cookie";
 //const data = CookieHooks();
-const [cookies, setCookie] = useCookies();
 ReactDOM.render(
   <CookiesProvider>
     <Router>
@@ -18,4 +17,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 serviceWorker.register();
-subscribeUser(cookies.userid)
+subscribeUser()
