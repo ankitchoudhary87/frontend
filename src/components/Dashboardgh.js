@@ -10,9 +10,9 @@ const Dashboardgh = (props) => {
     const storedData = JSON.parse(localStorage.getItem("MyUser"));
     if (storedData) {
         loggedInUserId = storedData.user_id;
-        //if(!cookies.userid){
+        if(!cookies.userid){
             setCookie('userid', loggedInUserId, { path: '/' });
-        //}
+        }
     }
     const [loader, setLoader] = useState(false);
     const [userlist, setUserlist] = useState([]);

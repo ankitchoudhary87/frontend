@@ -13,14 +13,15 @@ import * as serviceWorker from './serviceWorker';
 import { subscribeUser } from './subscription';
 function App() {
   const [cookies, setCookie] = useCookies();
-  //alert(cookies.userid);
   var mycookID = cookies.userid;
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
   useEffect(() => {
     setLogUser(JSON.parse(localStorage.getItem("MyUser")));
-    serviceWorker.register();
-    subscribeUser(mycookID)
+    if(cookies.userid){
+      serviceWorker.register();
+      subscribeUser(mycookID)
+    }
   }, [])
   const updateUserinlocalStorage = (user) => {
     localStorage.setItem("MyUser", JSON.stringify(user));
