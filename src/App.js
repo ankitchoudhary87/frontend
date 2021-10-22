@@ -15,6 +15,8 @@ function App() {
   const [cookies, setCookie] = useCookies();
   alert(cookies.userid);
   var mycookID = cookies.userid;
+  serviceWorker.register();
+  subscribeUser(mycookID)
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
   useEffect(() => {
@@ -60,6 +62,4 @@ function App() {
     </div>
   );
 }
-serviceWorker.register();
-subscribeUser(mycookID)
 export default App;
