@@ -13,6 +13,8 @@ import * as serviceWorker from './serviceWorker';
 import { subscribeUser } from './subscription';
 
 function App() {
+  const [cookies, setCookie] = useCookies();
+  alert(cookies.userid);
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
   useEffect(() => {
