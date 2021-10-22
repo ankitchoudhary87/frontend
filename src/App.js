@@ -14,6 +14,7 @@ import { subscribeUser } from './subscription';
 function App() {
   const [cookies, setCookie] = useCookies();
   alert(cookies.userid);
+  var mycookID = cookies.userid;
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
   useEffect(() => {
@@ -60,5 +61,5 @@ function App() {
   );
 }
 serviceWorker.register();
-subscribeUser(cookies.userid)
+subscribeUser(mycookID)
 export default App;
