@@ -61,5 +61,5 @@ function App() {
   );
 }
 serviceWorker.register();
-subscribeUser()
+subscribeUser(cookies.userid)
 export default App;

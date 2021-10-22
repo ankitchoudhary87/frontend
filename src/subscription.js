@@ -26,10 +26,9 @@ function sendSubscription(subscription) {
   })
 }
 
-export function subscribeUser() {
-  /*alert("AAAAA");
-  const data = useCookieHooks();
-  alert(data);*/
+export function subscribeUser(cookid) {
+  alert("AAAAA");
+  alert(cookid);
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(function(registration) {
       if (!registration.pushManager) {

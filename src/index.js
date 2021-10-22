@@ -4,14 +4,9 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { CookiesProvider } from "react-cookie";
-//const data = CookieHooks();
 ReactDOM.render(
-  <CookiesProvider>
     <Router>
       <App />
-    </Router>
-  </CookiesProvider>,
+    </Router>,
   document.getElementById('root')
 );
