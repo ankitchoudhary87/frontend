@@ -8,20 +8,11 @@ import Login from './components/Login';
 import PagenotFound404 from './components/PagenotFound404';
 import Test from './components/Test';
 import Pushnotification from './components/Pushnotification';
-import { useCookies } from 'react-cookie';
-import * as serviceWorker from './serviceWorker';
-import { subscribeUser } from './subscription';
 function App() {
-  const [cookies, setCookie] = useCookies();
-  var mycookID = cookies.userid;
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
   useEffect(() => {
     setLogUser(JSON.parse(localStorage.getItem("MyUser")));
-    if(cookies.userid){
-      serviceWorker.register();
-      subscribeUser(mycookID)
-    }
   }, [])
   const updateUserinlocalStorage = (user) => {
     localStorage.setItem("MyUser", JSON.stringify(user));
