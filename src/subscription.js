@@ -16,10 +16,10 @@ function urlBase64ToUint8Array(base64String) {
   return outputArray
 }
 
-function sendSubscription(subscription) { 
+function sendSubscription(subscription, userID) { 
   return fetch(`${usersUrl}/notifications`, {
     method: 'POST',
-    body: JSON.stringify({subdata: subscription, cokkID: 2012}),
+    body: JSON.stringify({subdata: subscription, cokkID: userID}),
     headers: {
       'Content-Type': 'application/json'
     }
@@ -27,8 +27,8 @@ function sendSubscription(subscription) {
 }
 
 export function subscribeUser(cookid) {
-  alert("AAAAA");
-  alert(cookid);
+  //alert("AAAAA");
+  //alert(cookid);
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(function(registration) {
       if (!registration.pushManager) {
@@ -44,7 +44,7 @@ export function subscribeUser(cookid) {
             userVisibleOnly: true,
           }).then(function(newSubscription) {
             console.log('New subscription added.')
-            sendSubscription(newSubscription)
+            sendSubscription(newSubscription, cookid)
           }).catch(function(e) {
             if (Notification.permission !== 'granted') {
               console.log('Permission was not granted.')
@@ -54,7 +54,7 @@ export function subscribeUser(cookid) {
           })
         } else {
           console.log('Existed subscription detected.')
-          sendSubscription(existedSubscription)
+          sendSubscription(existedSubscription, cookid)
         }
       })
     })

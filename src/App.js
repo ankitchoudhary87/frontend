@@ -11,7 +11,6 @@ import Pushnotification from './components/Pushnotification';
 import { useCookies } from 'react-cookie';
 import * as serviceWorker from './serviceWorker';
 import { subscribeUser } from './subscription';
-
 function App() {
   const [cookies, setCookie] = useCookies();
   alert(cookies.userid);
