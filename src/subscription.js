@@ -27,7 +27,6 @@ function sendSubscription(subscription) {
 }
 
 export function subscribeUser() {
-  const [cookies, setCookie] = useCookies();
   /*alert("AAAAA");
   const data = useCookieHooks();
   alert(data);*/
