@@ -8,6 +8,10 @@ import Login from './components/Login';
 import PagenotFound404 from './components/PagenotFound404';
 import Test from './components/Test';
 import Pushnotification from './components/Pushnotification';
+
+import * as serviceWorker from './serviceWorker';
+import { subscribeUser } from './subscription';
+
 function App() {
   const [logUser, setLogUser] = useState({});
   const history = useHistory();
@@ -54,4 +58,6 @@ function App() {
     </div>
   );
 }
+serviceWorker.register();
+subscribeUser()
 export default App;
